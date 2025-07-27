@@ -33,7 +33,7 @@ jobs:
 
 
       - name: Run Trivy scan
-        run: trivy fs >> test.txt
+        run: trivy fs . >> test.txt
 
   test:
     runs-on: ubuntu-latest
